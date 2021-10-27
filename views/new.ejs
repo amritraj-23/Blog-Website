@@ -1,0 +1,28 @@
+ <%- include('header') %> 
+ 
+    <h1 class="header">Blog Website</h1>
+    <div class="newData">
+        <form action="/blog" method="POST">
+            <h2>New Blog</h2>
+            <label for="title">Title:</label><br>
+            <input type="text" name="title" id="title" placeholder="Title...">
+            <br>
+            <br>
+                <label for="username">Name:</label><br>
+                <input type="text" name="username" id="username" placeholder="Type Name Here ..">
+    
+                <br>
+                <br>
+    
+                <label for="blog">Description:</label>
+                <br>
+                <textarea name="blog" id="blog" cols="30" rows="3"></textarea>
+                <br>
+                <button type="submit" class="btn btn-outline-warning">Create Blog</button>
+        </form>
+    </div>
+   
+
+    
+</body>
+</html>

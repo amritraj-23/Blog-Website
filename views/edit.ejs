@@ -1,0 +1,19 @@
+<%- include('header') %>
+
+    <h1 class="header">Blog Website</h1>
+    <div class="editData">
+        <h2>Edit Description</h2>
+        <form action="/blog/<%=foundBlog.id%>?_method=PATCH" method="POST">
+                <label for="blog">Description:</label>
+                <br>
+                <textarea name="blog" id="blog" cols="30" rows="3"><%=foundBlog.blog%></textarea>
+                <br>
+                <button type="submit" class="btn btn-outline-primary">Save</button>
+        </form>
+    </div>
+
+   
+
+    
+</body>
+</html>
